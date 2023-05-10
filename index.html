@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/myStyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+    background-color: rgb(245,245,220);
+}
+#shapka {
+  background-color: rgb(251,206,177);
+}
+.w3-theme-d3 {color:#fff !important; background-color:#8e2a16 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#a67453 !important}
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: Sofia, serif;
+}
+</style>
+<script src=""></script>
+</head>
+<body>
+  <!-- НАВИГАЦИЯ -->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-l1 w3-large" style="width:9%">
+    <a href="info.html" class="w3-bar-item w3-button">о нас</a>
+    <a href="reviews.php" class="w3-bar-item w3-button">отзывы</a>
+    <a href="#" class="w3-bar-item w3-button">команда</a>
+  </div>
+  
+
+  <!-- ШАПКА -->
+<div class="w3-container w3-border w3-center w3-padding-16 w3-animate-top" style="margin-left:9%" id="shapka">
+    <img src="images/9ba40f4d6faaf6ae148c7e1ec17b1a29.jpg" class="w3-image" alt="cofee" style="width:10%;">
+    <h4 class="w3-xxlarge"><b>Кофе-тайм</b></h4>
+    <p class="w3-large">Лучшее место для встреч с друзьями и наслаждения вкуснейшим кофе и десертами</p>
+      <!-- описание -->
+    <div class="w3-container w3-card-4 w3-padding-64 w3-center">
+      <p class="w3-xxlarge">Наша кофейня</p>
+      <p class="w3-xlarge w3-left-align">Мы с гордостью представляем лучшее место для встреч с друзьями и наслаждения вкуснейшим кофе и десертами. У нас вы можете провести время с комфортом и насладиться атмосферой теплого и уютного места. Мы используем только лучшие ингредиенты и предлагаем широкий выбор напитков и блюд. Наша команда бариста профессионалы всегда готовы порадовать вас своим мастерством.</p>
+      <div class="w3-container w3-leftbar w3-border-brown w3-large">
+        <p class="w3-large" style="text-shadow:1px 0 0 #444">Уютное место, где вы можете насладиться свежеобжаренным кофе и домашней выпечкой в приятной обстановке. Мы предлагаем только лучшие сорта кофе, которые были тщательно отобраны нашими экспертами. Также у нас вы можете попробовать разнообразные блюда и напитки, которые готовят наши талантливые повара и баристы.</p>
+      </div>
+      
+    </div>
+     <!-- фотки -->
+    <div class="w3-content w3-bottombar w3-topbar w3-border-brown w3-display-container" style="max-width:50%">
+      <img class="mySlides" src="images/2b1a12a180e71154da6d665d9460a946.png" style="width:100%">
+      <img class="mySlides" src="images/1647515980_23-kartinkin-net-p-kofeinya-kartinki-23.jpg" style="width:100%">
+      <img class="mySlides" src="images/barista-pouring-coffee.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    <div class="w3-container w3-card-2 w3-block" style="width: 100%;">
+      <h4 class=" w3-xxlarge">Заинтересовало?</h4>
+    <button class="w3-btn w3-round w3-animate-opacity w3-panel w3-xxlarge" style="background-color: #C1876B; color: white;">ТЫКАЙ</button>
+    
+    </div>
+    <!-- таблица -->
+    <h2>Наши блюда и напитки</h2>
+    <table class="w3-table w3-bordered w3-hoverable" style="width:100%">
+      <thead>
+        <tr class="w3-light-grey">
+          <th style="width:20%">Название</th>
+          <th style="width:30%">Описание</th>
+          <th style="width:10%">Цена</th>
+          <th class="w3-center">Изображение</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Капучино</td>
+          <td>Классический напиток из эспрессо и молока с мягким вкусом и ароматом</td>
+          <td>150 рублей</td>
+          <td class="w3-center w3-hover-opacity"><img src="images/171-2.jpg" alt="Капучино" style="max-width:65%;margin-left: 25%;cursor:pointer" onclick="onClick(this)"></td>
+        </tr>
+        <tr>
+          <td>Американо</td>
+          <td>Напиток из эспрессо и горячей воды с крепким вкусом и выраженной горчинкой</td>
+          <td>120 рублей</td>
+          <td class="w3-center"><img src="images/what-is-a-café-Americano.jpg" alt="Американо" style="max-width:65%;margin-left: 25%;"></td>
+        </tr>
+        <tr>
+          <td>Чизкейк</td>
+          <td>Десерт из сливочного сыра с песочным коржом и фруктовой подливой</td>
+          <td>250 рублей</td>
+          <td class="w3-center"><img src="images/1632126728_49-mykaleidoscope-ru-p-chizkeik-klassicheskii-krasivo-foto-52.jpg" alt="Чизкейк" style="max-width:65%;margin-left: 25%;"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- modal okno -->
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>
+    </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+    </script>
+</body>
+</html>
+
